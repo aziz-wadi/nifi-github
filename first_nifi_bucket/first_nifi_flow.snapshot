@@ -204,7 +204,7 @@
             "y" : 200.0
           },
           "properties" : {
-            "filename" : "${filename:substringBefore('.')}_dt-${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
+            "filename" : "${filename:substringBefore('.')}_datetime-${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
