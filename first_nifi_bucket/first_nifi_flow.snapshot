@@ -15,16 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-            "id" : "b92cd3e3-dd9f-369b-b159-ce335d3d6f21",
-            "instanceIdentifier" : "4708480c-3550-3fdf-ed76-8d0e30ac3b0b",
-            "name" : "UpdateAttribute",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "b4d39f12-c18b-3657-9cc1-b73a78500e5f",
+            "instanceIdentifier" : "f3fd5bfe-1731-3ae3-5fec-70cd7ee26cfc",
+            "name" : "PutFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-          "identifier" : "a016338b-dfda-317c-904b-161ad362920b",
-          "instanceIdentifier" : "090498eb-b586-3254-4cbf-b18d2ddddce2",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+          "identifier" : "8cec9e91-411b-3fc9-af6d-72cd4054647a",
+          "instanceIdentifier" : "c1c60f54-0194-1000-9c15-748596e84c58",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -34,10 +34,10 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-            "id" : "4f588548-6eb8-3a44-a0b3-740aa420e6bf",
-            "instanceIdentifier" : "16d70b6e-d025-3f5e-64aa-301ef7faffd3",
-            "name" : "GetFile",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "b92cd3e3-dd9f-369b-b159-ce335d3d6f21",
+            "instanceIdentifier" : "1831cef5-79bc-3b49-1375-c4491cc8bbb9",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -48,16 +48,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-            "id" : "b4d39f12-c18b-3657-9cc1-b73a78500e5f",
-            "instanceIdentifier" : "02857626-9c88-3375-c36b-6ed6147b55e2",
-            "name" : "PutFile",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "b92cd3e3-dd9f-369b-b159-ce335d3d6f21",
+            "instanceIdentifier" : "1831cef5-79bc-3b49-1375-c4491cc8bbb9",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-          "identifier" : "e1dda63b-0e71-3aba-81f8-d75eef725803",
-          "instanceIdentifier" : "6d54041a-2931-3498-5c9d-308a7759173f",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+          "identifier" : "1ed75b3b-5f6c-3fa8-ae37-16195bc779cf",
+          "instanceIdentifier" : "c1c5df20-0194-1000-7646-ff8c5f59d740",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -67,10 +67,43 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
-            "id" : "b92cd3e3-dd9f-369b-b159-ce335d3d6f21",
-            "instanceIdentifier" : "4708480c-3550-3fdf-ed76-8d0e30ac3b0b",
-            "name" : "UpdateAttribute",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "f551e6ef-aedb-3f27-a516-8cdfcafe33c9",
+            "instanceIdentifier" : "c1c524b7-0194-1000-4cb0-36180a078561",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "f551e6ef-aedb-3f27-a516-8cdfcafe33c9",
+            "instanceIdentifier" : "c1c524b7-0194-1000-4cb0-36180a078561",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+          "identifier" : "3d6d6a8b-2c3b-3c3c-abe2-fde2d1204fcc",
+          "instanceIdentifier" : "c1c5c3ab-0194-1000-1c06-d1d5154f5141",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+            "id" : "4f588548-6eb8-3a44-a0b3-740aa420e6bf",
+            "instanceIdentifier" : "5364380e-fe22-38b9-b50d-72c92a6ddba8",
+            "name" : "GetFile",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -82,15 +115,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
+        "identifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "be3386c8-0194-1000-c443-ffff25ca9631",
+        "instanceIdentifier" : "c1c4d41e-0194-1000-d94b-b4d71d865ec7",
         "labels" : [ ],
         "name" : "first_nifi",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 1712.0,
-          "y" : 96.0
+          "x" : 547.7325632269686,
+          "y" : 52.354648615606905
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -106,15 +139,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
           "identifier" : "b4d39f12-c18b-3657-9cc1-b73a78500e5f",
-          "instanceIdentifier" : "02857626-9c88-3375-c36b-6ed6147b55e2",
+          "instanceIdentifier" : "f3fd5bfe-1731-3ae3-5fec-70cd7ee26cfc",
           "maxBackoffPeriod" : "10 mins",
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1760.0,
-            "y" : 440.0
+            "x" : 1112.0,
+            "y" : 432.0
           },
           "properties" : {
             "Create Missing Directories" : "false",
@@ -193,15 +226,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
           "identifier" : "b92cd3e3-dd9f-369b-b159-ce335d3d6f21",
-          "instanceIdentifier" : "4708480c-3550-3fdf-ed76-8d0e30ac3b0b",
+          "instanceIdentifier" : "1831cef5-79bc-3b49-1375-c4491cc8bbb9",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 1760.0,
-            "y" : 200.0
+            "y" : 432.0
           },
           "properties" : {
             "filename" : "${filename:substringBefore('.')}_datetime-${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
@@ -262,9 +295,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "792c4fa3-75fd-32d9-a727-418ca2dbf465",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
           "identifier" : "4f588548-6eb8-3a44-a0b3-740aa420e6bf",
-          "instanceIdentifier" : "16d70b6e-d025-3f5e-64aa-301ef7faffd3",
+          "instanceIdentifier" : "5364380e-fe22-38b9-b50d-72c92a6ddba8",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GetFile",
           "penaltyDuration" : "30 sec",
@@ -365,6 +398,56 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GetFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "d78c85f6-aff8-3b70-b6a6-a6f973edf512",
+          "identifier" : "f551e6ef-aedb-3f27-a516-8cdfcafe33c9",
+          "instanceIdentifier" : "c1c524b7-0194-1000-4cb0-36180a078561",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateCounter",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1760.0,
+            "y" : 184.0
+          },
+          "properties" : {
+            "counter-name" : "getFile_counter",
+            "delta" : "1"
+          },
+          "propertyDescriptors" : {
+            "counter-name" : {
+              "displayName" : "Counter Name",
+              "identifiesControllerService" : false,
+              "name" : "counter-name",
+              "sensitive" : false
+            },
+            "delta" : {
+              "displayName" : "Delta",
+              "identifiesControllerService" : false,
+              "name" : "delta",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],

@@ -1,6 +1,13 @@
 flows:
-  8b87aa1f-0246-4444-bc43-298792e45609: {ver: 3, file: first_nifi_flow.snapshot, comments: replace
-      dt in filename with datetime, author: anonymous, created: 1738364074425, flowName: first_nifi_flow,
-    flowDesc: baseline flow}
+  8b87aa1f-0246-4444-bc43-298792e45609:
+    ver: 4
+    file: first_nifi_flow.snapshot
+    comments: |-
+      add getFile counter
+      add reporting tasks
+    author: anonymous
+    created: 1738417948806
+    flowName: first_nifi_flow
+    flowDesc: baseline flow
 layoutVer: 1
 bucketId: 1afddcf3-7b5a-4a0c-9787-c80f40e66f77
