@@ -15,16 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "9fc33e24-cc0e-32b0-a9c8-039aa147494b",
-            "instanceIdentifier" : "bb082479-0438-3c96-82ff-8130a2baeb14",
+            "instanceIdentifier" : "01892af0-e1b8-341b-264e-86bb426e79d3",
             "name" : "move passed file",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "b5fef8e9-510c-3529-b65e-8c22a115033a",
-          "instanceIdentifier" : "ca0a59eb-7a73-33e8-6827-5b43542c7d47",
+          "instanceIdentifier" : "55eaedc4-765c-33ad-1070-03544481c924",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -34,9 +34,9 @@
           "selectedRelationships" : [ "pass" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "311b747f-eb2d-3a6d-bb41-4868fc7e41ec",
-            "instanceIdentifier" : "493bd76a-c38c-34ad-e846-4274e02b353e",
+            "instanceIdentifier" : "1160a103-24f5-3827-88da-38a247a41039",
             "name" : "pass or fail",
             "type" : "PROCESSOR"
           },
@@ -48,16 +48,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "afaa63a2-14af-312b-b232-55db46a3ca11",
-            "instanceIdentifier" : "100ddd47-64b0-31c5-bfc7-2ae955693bd6",
+            "instanceIdentifier" : "3288aa72-4061-37a0-7cc8-918c6f08dde5",
             "name" : "save passed csv",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "65655199-d039-36aa-bab2-9000665bbb03",
-          "instanceIdentifier" : "bc7af2a7-1611-3322-ab27-4a99e9e5ccfe",
+          "instanceIdentifier" : "e51030c8-db50-3346-1fd7-5126aa65f9a1",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -67,9 +67,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "c8b4d164-42ce-3aaa-af9d-ee90c4b4c864",
-            "instanceIdentifier" : "e77a38d2-0fe5-30cc-e39d-8166b4c498a2",
+            "instanceIdentifier" : "2b8020bf-7fe6-316e-afa9-64ceebea2676",
             "name" : "change file name",
             "type" : "PROCESSOR"
           },
@@ -81,16 +81,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "a614d105-8fce-3edc-8360-8c46de61704c",
-            "instanceIdentifier" : "4a54021b-3048-34e7-2b30-155f6bbe3db0",
+            "instanceIdentifier" : "e2e6d45e-7f7f-3e9a-213c-92b0b82428c0",
             "name" : "change file name",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "d72b53a0-aa3e-3ef8-8693-77cfc8421831",
-          "instanceIdentifier" : "01ce5f0c-38eb-33b8-c30c-73dcadfeb8f0",
+          "instanceIdentifier" : "46828324-c5fc-3feb-5737-9435ca7db9ba",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -100,9 +100,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "e01a102f-38b9-328d-a444-3cd6a27f5903",
-            "instanceIdentifier" : "ce8e44c5-ab2e-3a19-a8a9-86d3e661300e",
+            "instanceIdentifier" : "d3dc3f95-c47b-3004-538b-44a8238cbd2c",
             "name" : "move failed file",
             "type" : "PROCESSOR"
           },
@@ -114,16 +114,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "83ff6f3e-7c41-39fe-9ead-0d680a9600ac",
-            "instanceIdentifier" : "50ff2149-1d3b-337f-4feb-36b7c7f69584",
+            "instanceIdentifier" : "8dcd8c1b-ff82-3559-a2ab-e26717eb3398",
             "name" : "validate ppl",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "372d5a30-5fe7-3983-86ea-17337112a949",
-          "instanceIdentifier" : "5925b86b-3aaf-3517-0f0a-a88c9c46c9ea",
+          "instanceIdentifier" : "defd1c3d-a5c3-390f-8a99-7930474c2074",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -133,9 +133,9 @@
           "selectedRelationships" : [ "output stream" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "f86ce257-28d3-3bd1-bfa0-4054d946b484",
-            "instanceIdentifier" : "a38b4693-bb92-3f5f-e153-2c984499eb79",
+            "instanceIdentifier" : "6b2f2505-990e-358c-5533-57ad817a3f93",
             "name" : "create 1000 ppl",
             "type" : "PROCESSOR"
           },
@@ -147,16 +147,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "c8b4d164-42ce-3aaa-af9d-ee90c4b4c864",
-            "instanceIdentifier" : "e77a38d2-0fe5-30cc-e39d-8166b4c498a2",
+            "instanceIdentifier" : "2b8020bf-7fe6-316e-afa9-64ceebea2676",
             "name" : "change file name",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "4724f479-a1ad-3ff8-9f9b-62dbb9cdb7f5",
-          "instanceIdentifier" : "e2c3d512-089d-34b2-6ebd-f0ea4fcd765f",
+          "instanceIdentifier" : "e34b81e9-5526-31be-8cd3-7a0c8a460e6b",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -166,9 +166,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "9fc33e24-cc0e-32b0-a9c8-039aa147494b",
-            "instanceIdentifier" : "bb082479-0438-3c96-82ff-8130a2baeb14",
+            "instanceIdentifier" : "01892af0-e1b8-341b-264e-86bb426e79d3",
             "name" : "move passed file",
             "type" : "PROCESSOR"
           },
@@ -180,16 +180,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "4ec1b475-366c-34ee-99b3-a7a74876c998",
-            "instanceIdentifier" : "46b7e552-1a3f-32f2-e847-142e7aab4b14",
+            "instanceIdentifier" : "80b746bd-1bac-3955-f6c5-e3d5418d3b07",
             "name" : "extract validation result",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "716be369-5005-3057-83cf-2b3a76c29276",
-          "instanceIdentifier" : "99f51a68-ffe4-399d-05f9-56b35605f94c",
+          "instanceIdentifier" : "a074538b-7086-3c96-5c19-a2e18277b1d3",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -199,9 +199,9 @@
           "selectedRelationships" : [ "output stream" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "83ff6f3e-7c41-39fe-9ead-0d680a9600ac",
-            "instanceIdentifier" : "50ff2149-1d3b-337f-4feb-36b7c7f69584",
+            "instanceIdentifier" : "8dcd8c1b-ff82-3559-a2ab-e26717eb3398",
             "name" : "validate ppl",
             "type" : "PROCESSOR"
           },
@@ -213,16 +213,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "913cccb6-a1aa-3a50-937f-20494e4eccf8",
-            "instanceIdentifier" : "a9fb2556-9381-390a-9479-7f0daf722c44",
+            "instanceIdentifier" : "e001c43d-d320-316c-ecb4-08573ffa25ad",
             "name" : "save failed csv",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "c87bab10-b778-3a4c-929b-5dcfbc8a99e4",
-          "instanceIdentifier" : "b791b0ee-326f-3569-d6d6-40b1a21e63db",
+          "instanceIdentifier" : "3eecc121-704a-3153-f035-36425c4929b6",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -232,9 +232,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "a614d105-8fce-3edc-8360-8c46de61704c",
-            "instanceIdentifier" : "4a54021b-3048-34e7-2b30-155f6bbe3db0",
+            "instanceIdentifier" : "e2e6d45e-7f7f-3e9a-213c-92b0b82428c0",
             "name" : "change file name",
             "type" : "PROCESSOR"
           },
@@ -246,16 +246,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "311b747f-eb2d-3a6d-bb41-4868fc7e41ec",
-            "instanceIdentifier" : "493bd76a-c38c-34ad-e846-4274e02b353e",
+            "instanceIdentifier" : "1160a103-24f5-3827-88da-38a247a41039",
             "name" : "pass or fail",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "55dd8d20-6790-3942-a8ae-c651d755edd5",
-          "instanceIdentifier" : "5210bbdd-8467-3233-2a57-d812cefbd91b",
+          "instanceIdentifier" : "7aaedcd0-8ef9-3e88-7dec-ea5eabbc218c",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -265,9 +265,9 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "4ec1b475-366c-34ee-99b3-a7a74876c998",
-            "instanceIdentifier" : "46b7e552-1a3f-32f2-e847-142e7aab4b14",
+            "instanceIdentifier" : "80b746bd-1bac-3955-f6c5-e3d5418d3b07",
             "name" : "extract validation result",
             "type" : "PROCESSOR"
           },
@@ -279,16 +279,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "e01a102f-38b9-328d-a444-3cd6a27f5903",
-            "instanceIdentifier" : "ce8e44c5-ab2e-3a19-a8a9-86d3e661300e",
+            "instanceIdentifier" : "d3dc3f95-c47b-3004-538b-44a8238cbd2c",
             "name" : "move failed file",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "3b2578fe-48f8-3c57-8664-fca993681bf3",
-          "instanceIdentifier" : "f5dda965-6e9f-3d9d-7342-e75d04ab2003",
+          "instanceIdentifier" : "d6827672-a633-31ea-09a0-77d161f606b4",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -298,9 +298,9 @@
           "selectedRelationships" : [ "fail" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "311b747f-eb2d-3a6d-bb41-4868fc7e41ec",
-            "instanceIdentifier" : "493bd76a-c38c-34ad-e846-4274e02b353e",
+            "instanceIdentifier" : "1160a103-24f5-3827-88da-38a247a41039",
             "name" : "pass or fail",
             "type" : "PROCESSOR"
           },
@@ -312,16 +312,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "f86ce257-28d3-3bd1-bfa0-4054d946b484",
-            "instanceIdentifier" : "a38b4693-bb92-3f5f-e153-2c984499eb79",
+            "instanceIdentifier" : "6b2f2505-990e-358c-5533-57ad817a3f93",
             "name" : "create 1000 ppl",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "9cfc6c49-d3fa-3b48-8959-e1e9a0450584",
-          "instanceIdentifier" : "44cbc911-9f0c-330d-ee8c-ddf7191523f2",
+          "instanceIdentifier" : "6bb01350-c940-38db-5592-21ace7f9dbf5",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -331,9 +331,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+            "groupId" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
             "id" : "2dd542d4-aaf7-3971-a363-67cfa78934e1",
-            "instanceIdentifier" : "2cbe30c6-68f6-3643-ebe1-7e6478505349",
+            "instanceIdentifier" : "5f5f3bf5-fa1f-3d63-7e09-cf35b13908a0",
             "name" : "start",
             "type" : "PROCESSOR"
           },
@@ -346,15 +346,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+        "identifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "be9afecd-0194-1000-55d8-2f3eb6468dde",
+        "instanceIdentifier" : "c15c31bb-0194-1000-366b-b5cdd4f231f2",
         "labels" : [ ],
         "name" : "CH07_staging_validating",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 1768.0,
-          "y" : 144.0
+          "x" : 536.0,
+          "y" : 120.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -370,9 +370,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "c8b4d164-42ce-3aaa-af9d-ee90c4b4c864",
-          "instanceIdentifier" : "e77a38d2-0fe5-30cc-e39d-8166b4c498a2",
+          "instanceIdentifier" : "2b8020bf-7fe6-316e-afa9-64ceebea2676",
           "maxBackoffPeriod" : "10 mins",
           "name" : "change file name",
           "penaltyDuration" : "30 sec",
@@ -381,7 +381,7 @@
             "y" : 560.5
           },
           "properties" : {
-            "filename" : "ppl_${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
+            "filename" : "ppl_dt-${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
@@ -439,9 +439,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "83ff6f3e-7c41-39fe-9ead-0d680a9600ac",
-          "instanceIdentifier" : "50ff2149-1d3b-337f-4feb-36b7c7f69584",
+          "instanceIdentifier" : "8dcd8c1b-ff82-3559-a2ab-e26717eb3398",
           "maxBackoffPeriod" : "10 mins",
           "name" : "validate ppl",
           "penaltyDuration" : "30 sec",
@@ -524,63 +524,6 @@
           "type" : "org.apache.nifi.processors.standard.ExecuteStreamCommand",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "unmatched" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
-          "identifier" : "311b747f-eb2d-3a6d-bb41-4868fc7e41ec",
-          "instanceIdentifier" : "493bd76a-c38c-34ad-e846-4274e02b353e",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "pass or fail",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 2894.5,
-            "y" : 464.5
-          },
-          "properties" : {
-            "fail" : "${result:equals('fail')}",
-            "Routing Strategy" : "Route to Property name",
-            "pass" : "${result:equals('pass')}"
-          },
-          "propertyDescriptors" : {
-            "fail" : {
-              "displayName" : "fail",
-              "identifiesControllerService" : false,
-              "name" : "fail",
-              "sensitive" : false
-            },
-            "Routing Strategy" : {
-              "displayName" : "Routing Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Routing Strategy",
-              "sensitive" : false
-            },
-            "pass" : {
-              "displayName" : "pass",
-              "identifiesControllerService" : false,
-              "name" : "pass",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 25,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "failure", "unmatched" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -593,9 +536,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "4ec1b475-366c-34ee-99b3-a7a74876c998",
-          "instanceIdentifier" : "46b7e552-1a3f-32f2-e847-142e7aab4b14",
+          "instanceIdentifier" : "80b746bd-1bac-3955-f6c5-e3d5418d3b07",
           "maxBackoffPeriod" : "10 mins",
           "name" : "extract validation result",
           "penaltyDuration" : "30 sec",
@@ -659,6 +602,63 @@
           "type" : "org.apache.nifi.processors.standard.EvaluateJsonPath",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ "unmatched" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
+          "identifier" : "311b747f-eb2d-3a6d-bb41-4868fc7e41ec",
+          "instanceIdentifier" : "1160a103-24f5-3827-88da-38a247a41039",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "pass or fail",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2894.5,
+            "y" : 464.5
+          },
+          "properties" : {
+            "fail" : "${result:equals('fail')}",
+            "Routing Strategy" : "Route to Property name",
+            "pass" : "${result:equals('pass')}"
+          },
+          "propertyDescriptors" : {
+            "fail" : {
+              "displayName" : "fail",
+              "identifiesControllerService" : false,
+              "name" : "fail",
+              "sensitive" : false
+            },
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "pass" : {
+              "displayName" : "pass",
+              "identifiesControllerService" : false,
+              "name" : "pass",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 25,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "failure", "permission.denied", "not.found" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -671,9 +671,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "e01a102f-38b9-328d-a444-3cd6a27f5903",
-          "instanceIdentifier" : "ce8e44c5-ab2e-3a19-a8a9-86d3e661300e",
+          "instanceIdentifier" : "d3dc3f95-c47b-3004-538b-44a8238cbd2c",
           "maxBackoffPeriod" : "10 mins",
           "name" : "move failed file",
           "penaltyDuration" : "30 sec",
@@ -736,93 +736,6 @@
           "type" : "org.apache.nifi.processors.standard.FetchFile",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "success", "failure" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
-          "identifier" : "913cccb6-a1aa-3a50-937f-20494e4eccf8",
-          "instanceIdentifier" : "a9fb2556-9381-390a-9479-7f0daf722c44",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "save failed csv",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1590.5,
-            "y" : 176.5
-          },
-          "properties" : {
-            "Create Missing Directories" : "false",
-            "Directory" : "/home/big_data/people_pipeline/nifi_fail/",
-            "Conflict Resolution Strategy" : "fail"
-          },
-          "propertyDescriptors" : {
-            "Group" : {
-              "displayName" : "Group",
-              "identifiesControllerService" : false,
-              "name" : "Group",
-              "sensitive" : false
-            },
-            "Owner" : {
-              "displayName" : "Owner",
-              "identifiesControllerService" : false,
-              "name" : "Owner",
-              "sensitive" : false
-            },
-            "Create Missing Directories" : {
-              "displayName" : "Create Missing Directories",
-              "identifiesControllerService" : false,
-              "name" : "Create Missing Directories",
-              "sensitive" : false
-            },
-            "Permissions" : {
-              "displayName" : "Permissions",
-              "identifiesControllerService" : false,
-              "name" : "Permissions",
-              "sensitive" : false
-            },
-            "Maximum File Count" : {
-              "displayName" : "Maximum File Count",
-              "identifiesControllerService" : false,
-              "name" : "Maximum File Count",
-              "sensitive" : false
-            },
-            "Last Modified Time" : {
-              "displayName" : "Last Modified Time",
-              "identifiesControllerService" : false,
-              "name" : "Last Modified Time",
-              "sensitive" : false
-            },
-            "Directory" : {
-              "displayName" : "Directory",
-              "identifiesControllerService" : false,
-              "name" : "Directory",
-              "sensitive" : false
-            },
-            "Conflict Resolution Strategy" : {
-              "displayName" : "Conflict Resolution Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Conflict Resolution Strategy",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.PutFile",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "original", "nonzero status" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -835,9 +748,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "f86ce257-28d3-3bd1-bfa0-4054d946b484",
-          "instanceIdentifier" : "a38b4693-bb92-3f5f-e153-2c984499eb79",
+          "instanceIdentifier" : "6b2f2505-990e-358c-5533-57ad817a3f93",
           "maxBackoffPeriod" : "10 mins",
           "name" : "create 1000 ppl",
           "penaltyDuration" : "30 sec",
@@ -920,6 +833,93 @@
           "type" : "org.apache.nifi.processors.standard.ExecuteStreamCommand",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
+          "identifier" : "913cccb6-a1aa-3a50-937f-20494e4eccf8",
+          "instanceIdentifier" : "e001c43d-d320-316c-ecb4-08573ffa25ad",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "save failed csv",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1590.5,
+            "y" : 176.5
+          },
+          "properties" : {
+            "Create Missing Directories" : "false",
+            "Directory" : "/home/big_data/people_pipeline/nifi_fail/",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "failure", "permission.denied", "not.found" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -932,9 +932,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "9fc33e24-cc0e-32b0-a9c8-039aa147494b",
-          "instanceIdentifier" : "bb082479-0438-3c96-82ff-8130a2baeb14",
+          "instanceIdentifier" : "01892af0-e1b8-341b-264e-86bb426e79d3",
           "maxBackoffPeriod" : "10 mins",
           "name" : "move passed file",
           "penaltyDuration" : "30 sec",
@@ -1009,9 +1009,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "2dd542d4-aaf7-3971-a363-67cfa78934e1",
-          "instanceIdentifier" : "2cbe30c6-68f6-3643-ebe1-7e6478505349",
+          "instanceIdentifier" : "5f5f3bf5-fa1f-3d63-7e09-cf35b13908a0",
           "maxBackoffPeriod" : "10 mins",
           "name" : "start",
           "penaltyDuration" : "30 sec",
@@ -1092,9 +1092,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "afaa63a2-14af-312b-b232-55db46a3ca11",
-          "instanceIdentifier" : "100ddd47-64b0-31c5-bfc7-2ae955693bd6",
+          "instanceIdentifier" : "3288aa72-4061-37a0-7cc8-918c6f08dde5",
           "maxBackoffPeriod" : "10 mins",
           "name" : "save passed csv",
           "penaltyDuration" : "30 sec",
@@ -1179,9 +1179,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "a224a8cd-61d6-3761-aa84-84657e015fd6",
+          "groupIdentifier" : "b67c4473-58f5-3c4b-96fe-17a87d23ff7b",
           "identifier" : "a614d105-8fce-3edc-8360-8c46de61704c",
-          "instanceIdentifier" : "4a54021b-3048-34e7-2b30-155f6bbe3db0",
+          "instanceIdentifier" : "e2e6d45e-7f7f-3e9a-213c-92b0b82428c0",
           "maxBackoffPeriod" : "10 mins",
           "name" : "change file name",
           "penaltyDuration" : "30 sec",
@@ -1190,7 +1190,7 @@
             "y" : 392.5
           },
           "properties" : {
-            "filename" : "ppl_${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
+            "filename" : "ppl_dt-${now():format(\"yyyy.MM.dd_HH.mm.ss\")}.csv",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
