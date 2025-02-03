@@ -198,8 +198,8 @@
           "properties" : {
             "elasticsearch-http-response-timeout" : "15 secs",
             "put-es-type" : "doc",
-            "put-es-index" : "ch10_variable_reg",
-            "elasticsearch-http-url" : "http://localhost:9200",
+            "put-es-index" : "${index}",
+            "elasticsearch-http-url" : "${elastic}",
             "put-es-batch-size" : "100",
             "elasticsearch-http-connect-timeout" : "5 secs",
             "put-es-index-op" : "index",
@@ -452,7 +452,10 @@
           "yieldDuration" : "0 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "elastic" : "http://localhost:9200",
+          "index" : "ch10_variable_reg"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { },

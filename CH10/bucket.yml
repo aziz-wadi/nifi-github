@@ -1,7 +1,7 @@
 flows:
-  dac2afb3-2b55-4a40-8b53-1c4d92299c49: {ver: 1, file: variable_registry_flow.snapshot,
-    comments: baseline, author: anonymous, created: 1738598828741, flowName: variable_registry_flow,
-    flowDesc: ''}
+  dac2afb3-2b55-4a40-8b53-1c4d92299c49: {ver: 2, file: variable_registry_flow.snapshot,
+    comments: adding local and global variables, author: anonymous, created: 1738600682721,
+    flowName: variable_registry_flow, flowDesc: ''}
   ee1c7f23-ad79-4cef-b0d4-dae16fee8bb3: {ver: 3, file: processor_group_flow.snapshot,
     comments: 'added a third file generator {"ID":"abc"}', author: anonymous, created: 1738584191658,
     flowName: processor_group_flow, flowDesc: ''}
