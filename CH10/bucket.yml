@@ -1,6 +1,6 @@
 flows:
-  ee1c7f23-ad79-4cef-b0d4-dae16fee8bb3: {ver: 2, file: processor_group_flow.snapshot,
-    comments: no changes, author: anonymous, created: 1738542302578, flowName: processor_group_flow,
-    flowDesc: ''}
+  ee1c7f23-ad79-4cef-b0d4-dae16fee8bb3: {ver: 3, file: processor_group_flow.snapshot,
+    comments: 'added a third file generator {"ID":"abc"}', author: anonymous, created: 1738584191658,
+    flowName: processor_group_flow, flowDesc: ''}
 layoutVer: 1
 bucketId: 9fb924c5-71e7-478c-b842-61b9de44b0d0
