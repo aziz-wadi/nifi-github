@@ -218,7 +218,7 @@
             "Keep Source File" : "true",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/home/big_data/nifi/my_data_source/ch11_datalake",
+            "Input Directory" : "${datalake_dir}",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
@@ -430,7 +430,9 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "datalake_dir" : "/home/big_data/nifi/my_data_source/ch11_datalake"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { },

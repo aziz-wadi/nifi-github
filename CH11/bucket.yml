@@ -2,8 +2,8 @@ flows:
   83692524-5100-47a7-9da7-83a6bcdd54d1: {ver: 1, file: scanLake.snapshot, comments: baseline,
     author: anonymous, created: 1738694255709, flowName: scanLake, flowDesc: scans
       datalake for matched/unmatched records}
-  cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 1, file: readDataLake.snapshot, comments: baseline,
-    author: anonymous, created: 1738691705022, flowName: readDataLake, flowDesc: reads
-      json record from datalake}
+  cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 2, file: readDataLake.snapshot, comments: using
+      datalake_dir global variable, author: anonymous, created: 1738694455206, flowName: readDataLake,
+    flowDesc: reads json record from datalake}
 layoutVer: 1
 bucketId: e17665c2-26be-471c-918c-aed3c12eabcd
