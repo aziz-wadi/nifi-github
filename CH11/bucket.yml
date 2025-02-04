@@ -1,4 +1,7 @@
 flows:
+  117ba4ae-972e-445b-b85d-96394e945d94: {ver: 1, file: insertStaging.snapshot, comments: baseline,
+    author: anonymous, created: 1738697584183, flowName: insertStaging, flowDesc: insert
+      to postgres db}
   83692524-5100-47a7-9da7-83a6bcdd54d1: {ver: 1, file: scanLake.snapshot, comments: baseline,
     author: anonymous, created: 1738694255709, flowName: scanLake, flowDesc: scans
       datalake for matched/unmatched records}

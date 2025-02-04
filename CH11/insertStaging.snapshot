@@ -1,0 +1,312 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : {
+        "54851d4e-a4f7-3753-ad89-14f257599f12" : {
+          "identifier" : "54851d4e-a4f7-3753-ad89-14f257599f12",
+          "name" : "CH11_postgres_test"
+        }
+      },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
+            "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
+            "name" : "PutSQL",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "9336479d-a78c-3c96-9883-b3d7a6e703fa",
+          "instanceIdentifier" : "d26f7541-0194-1000-4b2b-1b788699f885",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "73373112-286e-3701-bf4b-ac3b456d688f",
+            "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
+            "name" : "insertStaging_input",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "62e0b6ef-f356-3a2e-8aca-d2d605a686d3",
+            "instanceIdentifier" : "d258feca-0194-1000-a55d-6a9427e849e7",
+            "name" : "insertStaging_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "d43a2a6f-09e9-3534-8564-06215a09e830",
+          "instanceIdentifier" : "d25c7494-0194-1000-3030-f823adc4a35c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
+            "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
+            "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "ca135a59-45e7-3235-9ee5-3d923f46b8f4",
+          "instanceIdentifier" : "d26c6e12-0194-1000-a115-7d0033799927",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
+            "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
+            "name" : "PutSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+        "inputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "73373112-286e-3701-bf4b-ac3b456d688f",
+          "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
+          "name" : "insertStaging_input",
+          "position" : {
+            "x" : 520.0,
+            "y" : 56.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "INPUT_PORT"
+        } ],
+        "instanceIdentifier" : "d244ddbe-0194-1000-c9fd-3a80c46ce2f8",
+        "labels" : [ ],
+        "name" : "insertStaging",
+        "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "62e0b6ef-f356-3a2e-8aca-d2d605a686d3",
+          "instanceIdentifier" : "d258feca-0194-1000-a55d-6a9427e849e7",
+          "name" : "insertStaging_out",
+          "position" : {
+            "x" : 504.0,
+            "y" : 680.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        } ],
+        "position" : {
+          "x" : 2008.0,
+          "y" : 792.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ "failure", "retry" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
+          "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "PutSQL",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 472.0,
+            "y" : 216.0
+          },
+          "properties" : {
+            "Support Fragmented Transactions" : "true",
+            "putsql-sql-statement" : "INSERT INTO ${table}\nVALUES ('${userid}',\n'${name}',\n${age},\n'${street}',\n'${city}',\n'${state}',\n'${zip}');",
+            "Batch Size" : "100",
+            "Obtain Generated Keys" : "false",
+            "JDBC Connection Pool" : "54851d4e-a4f7-3753-ad89-14f257599f12",
+            "database-session-autocommit" : "false",
+            "rollback-on-failure" : "true"
+          },
+          "propertyDescriptors" : {
+            "Support Fragmented Transactions" : {
+              "displayName" : "Support Fragmented Transactions",
+              "identifiesControllerService" : false,
+              "name" : "Support Fragmented Transactions",
+              "sensitive" : false
+            },
+            "putsql-sql-statement" : {
+              "displayName" : "SQL Statement",
+              "identifiesControllerService" : false,
+              "name" : "putsql-sql-statement",
+              "sensitive" : false
+            },
+            "Transaction Timeout" : {
+              "displayName" : "Transaction Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Transaction Timeout",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Obtain Generated Keys" : {
+              "displayName" : "Obtain Generated Keys",
+              "identifiesControllerService" : false,
+              "name" : "Obtain Generated Keys",
+              "sensitive" : false
+            },
+            "JDBC Connection Pool" : {
+              "displayName" : "JDBC Connection Pool",
+              "identifiesControllerService" : true,
+              "name" : "JDBC Connection Pool",
+              "sensitive" : false
+            },
+            "database-session-autocommit" : {
+              "displayName" : "Database Session AutoCommit",
+              "identifiesControllerService" : false,
+              "name" : "database-session-autocommit",
+              "sensitive" : false
+            },
+            "rollback-on-failure" : {
+              "displayName" : "Rollback On Failure",
+              "identifiesControllerService" : false,
+              "name" : "rollback-on-failure",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutSQL",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
+          "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateCounter",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 456.0,
+            "y" : 448.0
+          },
+          "properties" : {
+            "counter-name" : "InsertedStaging",
+            "delta" : "1"
+          },
+          "propertyDescriptors" : {
+            "counter-name" : {
+              "displayName" : "Counter Name",
+              "identifiesControllerService" : false,
+              "name" : "counter-name",
+              "sensitive" : false
+            },
+            "delta" : {
+              "displayName" : "Delta",
+              "identifiesControllerService" : false,
+              "name" : "delta",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : {
+          "table" : "staging"
+        }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
