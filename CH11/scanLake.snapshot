@@ -14,71 +14,6 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "56e8aaaf-e761-344d-8789-e06f5e4d183d",
-            "instanceIdentifier" : "d23cef98-0194-1000-55cf-79ca5fe2079f",
-            "name" : "scanLake_unmatch_out",
-            "type" : "OUTPUT_PORT"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "2ace6aba-0599-3c14-9968-c521bfd7bded",
-          "instanceIdentifier" : "d23e8873-0194-1000-f5c1-f493c7e85ccf",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "75991b57-6c8a-3894-97c8-422b2f4137a5",
-            "instanceIdentifier" : "d23de2ac-0194-1000-d741-28fb118e5789",
-            "name" : "UpdateCounter",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "75991b57-6c8a-3894-97c8-422b2f4137a5",
-            "instanceIdentifier" : "d23de2ac-0194-1000-d741-28fb118e5789",
-            "name" : "UpdateCounter",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "e04887c7-9e7d-3fa2-9878-6e57e5c2ed71",
-          "instanceIdentifier" : "d23e1000-0194-1000-ba43-59a197ee97ae",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "57078fd4-bf9c-3880-a4d6-0dd45609ea91",
-            "instanceIdentifier" : "d22f42fd-0194-1000-ad4f-580e4051fcb4",
-            "name" : "ScanContent",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
             "comments" : "",
             "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
             "id" : "57078fd4-bf9c-3880-a4d6-0dd45609ea91",
@@ -200,20 +135,6 @@
         "name" : "scanLake",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
-          "componentType" : "OUTPUT_PORT",
-          "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "56e8aaaf-e761-344d-8789-e06f5e4d183d",
-          "instanceIdentifier" : "d23cef98-0194-1000-55cf-79ca5fe2079f",
-          "name" : "scanLake_unmatch_out",
-          "position" : {
-            "x" : 776.0,
-            "y" : 712.0
-          },
-          "scheduledState" : "ENABLED",
-          "type" : "OUTPUT_PORT"
-        }, {
-          "allowRemoteAccess" : false,
           "comments" : "",
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
@@ -222,15 +143,15 @@
           "instanceIdentifier" : "d2321efc-0194-1000-1cbd-92369f8550e0",
           "name" : "scanLake_match_out",
           "position" : {
-            "x" : 216.0,
-            "y" : 704.0
+            "x" : 480.0,
+            "y" : 712.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
           "x" : 2008.0,
-          "y" : 464.0
+          "y" : 472.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -253,11 +174,11 @@
           "name" : "UpdateCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 192.0,
+            "x" : 440.0,
             "y" : 496.0
           },
           "properties" : {
-            "counter-name" : "scanLake_matched",
+            "counter-name" : "scanLake_matchedRecords",
             "delta" : "1"
           },
           "propertyDescriptors" : {
@@ -284,7 +205,7 @@
           "type" : "org.apache.nifi.processors.standard.UpdateCounter",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "unmatched" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -336,56 +257,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ScanContent",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "75991b57-6c8a-3894-97c8-422b2f4137a5",
-          "instanceIdentifier" : "d23de2ac-0194-1000-d741-28fb118e5789",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "UpdateCounter",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 720.0,
-            "y" : 496.0
-          },
-          "properties" : {
-            "counter-name" : "scanLake_unmatched",
-            "delta" : "1"
-          },
-          "propertyDescriptors" : {
-            "counter-name" : {
-              "displayName" : "Counter Name",
-              "identifiesControllerService" : false,
-              "name" : "counter-name",
-              "sensitive" : false
-            },
-            "delta" : {
-              "displayName" : "Delta",
-              "identifiesControllerService" : false,
-              "name" : "delta",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
