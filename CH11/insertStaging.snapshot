@@ -21,28 +21,29 @@
           "destination" : {
             "comments" : "",
             "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-            "id" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
-            "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
-            "name" : "PutSQL",
+            "id" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
+            "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
+            "name" : "UpdateCounter",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-          "identifier" : "9336479d-a78c-3c96-9883-b3d7a6e703fa",
-          "instanceIdentifier" : "d26f7541-0194-1000-4b2b-1b788699f885",
+          "identifier" : "9d363986-4fde-3e5f-9d95-cefefe533f52",
+          "instanceIdentifier" : "d6abec3a-0194-1000-c079-56f97dffbac7",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
+            "comments" : "",
             "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-            "id" : "73373112-286e-3701-bf4b-ac3b456d688f",
-            "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
-            "name" : "insertStaging_input",
-            "type" : "INPUT_PORT"
+            "id" : "6a3e0b4a-4be3-3d62-81d7-6aefa2120740",
+            "instanceIdentifier" : "d6a8fbf4-0194-1000-0b56-1bd11b3cfa1c",
+            "name" : "ExecuteSQL",
+            "type" : "PROCESSOR"
           },
           "zIndex" : 0
         }, {
@@ -85,29 +86,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-            "id" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
-            "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
-            "name" : "UpdateCounter",
+            "id" : "6a3e0b4a-4be3-3d62-81d7-6aefa2120740",
+            "instanceIdentifier" : "d6a8fbf4-0194-1000-0b56-1bd11b3cfa1c",
+            "name" : "ExecuteSQL",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-          "identifier" : "ca135a59-45e7-3235-9ee5-3d923f46b8f4",
-          "instanceIdentifier" : "d26c6e12-0194-1000-a115-7d0033799927",
+          "identifier" : "963addef-5ae6-378e-8dec-267dd74cf7bb",
+          "instanceIdentifier" : "d6a93c5b-0194-1000-7307-1d82e7777afe",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
+          "selectedRelationships" : [ "" ],
           "source" : {
-            "comments" : "",
             "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-            "id" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
-            "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
-            "name" : "PutSQL",
-            "type" : "PROCESSOR"
+            "id" : "73373112-286e-3701-bf4b-ac3b456d688f",
+            "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
+            "name" : "insertStaging_input",
+            "type" : "INPUT_PORT"
           },
           "zIndex" : 0
         } ],
@@ -128,8 +128,8 @@
           "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
           "name" : "insertStaging_input",
           "position" : {
-            "x" : 520.0,
-            "y" : 56.0
+            "x" : 528.0,
+            "y" : 64.0
           },
           "scheduledState" : "ENABLED",
           "type" : "INPUT_PORT"
@@ -146,8 +146,8 @@
           "instanceIdentifier" : "d258feca-0194-1000-a55d-6a9427e849e7",
           "name" : "insertStaging_out",
           "position" : {
-            "x" : 504.0,
-            "y" : 680.0
+            "x" : 536.0,
+            "y" : 672.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
@@ -158,97 +158,6 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "failure", "retry" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
-          "identifier" : "739d3db6-1b7c-37da-a2e6-89d6377c547c",
-          "instanceIdentifier" : "d246160e-0194-1000-d72b-3b84a5735e0e",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "PutSQL",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 472.0,
-            "y" : 216.0
-          },
-          "properties" : {
-            "Support Fragmented Transactions" : "true",
-            "putsql-sql-statement" : "INSERT INTO ${table}\nVALUES ('${userid}',\n'${name}',\n${age},\n'${street}',\n'${city}',\n'${state}',\n'${zip}');",
-            "Batch Size" : "100",
-            "Obtain Generated Keys" : "false",
-            "JDBC Connection Pool" : "54851d4e-a4f7-3753-ad89-14f257599f12",
-            "database-session-autocommit" : "false",
-            "rollback-on-failure" : "true"
-          },
-          "propertyDescriptors" : {
-            "Support Fragmented Transactions" : {
-              "displayName" : "Support Fragmented Transactions",
-              "identifiesControllerService" : false,
-              "name" : "Support Fragmented Transactions",
-              "sensitive" : false
-            },
-            "putsql-sql-statement" : {
-              "displayName" : "SQL Statement",
-              "identifiesControllerService" : false,
-              "name" : "putsql-sql-statement",
-              "sensitive" : false
-            },
-            "Transaction Timeout" : {
-              "displayName" : "Transaction Timeout",
-              "identifiesControllerService" : false,
-              "name" : "Transaction Timeout",
-              "sensitive" : false
-            },
-            "Batch Size" : {
-              "displayName" : "Batch Size",
-              "identifiesControllerService" : false,
-              "name" : "Batch Size",
-              "sensitive" : false
-            },
-            "Obtain Generated Keys" : {
-              "displayName" : "Obtain Generated Keys",
-              "identifiesControllerService" : false,
-              "name" : "Obtain Generated Keys",
-              "sensitive" : false
-            },
-            "JDBC Connection Pool" : {
-              "displayName" : "JDBC Connection Pool",
-              "identifiesControllerService" : true,
-              "name" : "JDBC Connection Pool",
-              "sensitive" : false
-            },
-            "database-session-autocommit" : {
-              "displayName" : "Database Session AutoCommit",
-              "identifiesControllerService" : false,
-              "name" : "database-session-autocommit",
-              "sensitive" : false
-            },
-            "rollback-on-failure" : {
-              "displayName" : "Rollback On Failure",
-              "identifiesControllerService" : false,
-              "name" : "rollback-on-failure",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.PutSQL",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -268,11 +177,11 @@
           "name" : "UpdateCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 456.0,
+            "x" : 480.0,
             "y" : 448.0
           },
           "properties" : {
-            "counter-name" : "InsertedStaging",
+            "counter-name" : "insertedStaging_records",
             "delta" : "1"
           },
           "propertyDescriptors" : {
@@ -297,6 +206,138 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.UpdateCounter",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "6a3e0b4a-4be3-3d62-81d7-6aefa2120740",
+          "instanceIdentifier" : "d6a8fbf4-0194-1000-0b56-1bd11b3cfa1c",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ExecuteSQL",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 480.0,
+            "y" : 216.0
+          },
+          "properties" : {
+            "esql-max-rows" : "0",
+            "dbf-default-precision" : "10",
+            "Max Wait Time" : "0 seconds",
+            "Database Connection Pooling Service" : "54851d4e-a4f7-3753-ad89-14f257599f12",
+            "esql-auto-commit" : "true",
+            "dbf-user-logical-types" : "false",
+            "dbf-default-scale" : "0",
+            "compression-format" : "NONE",
+            "esql-output-batch-size" : "0",
+            "esql-fetch-size" : "0",
+            "SQL select query" : "INSERT INTO ${table}\nVALUES (${userid},\n'${name}',\n${age},\n'${street}',\n'${city}',\n'${state}',\n'${zip}');",
+            "dbf-normalize" : "false"
+          },
+          "propertyDescriptors" : {
+            "esql-max-rows" : {
+              "displayName" : "Max Rows Per Flow File",
+              "identifiesControllerService" : false,
+              "name" : "esql-max-rows",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "Max Wait Time" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "Max Wait Time",
+              "sensitive" : false
+            },
+            "Database Connection Pooling Service" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "Database Connection Pooling Service",
+              "sensitive" : false
+            },
+            "sql-post-query" : {
+              "displayName" : "SQL Post-Query",
+              "identifiesControllerService" : false,
+              "name" : "sql-post-query",
+              "sensitive" : false
+            },
+            "esql-auto-commit" : {
+              "displayName" : "Set Auto Commit",
+              "identifiesControllerService" : false,
+              "name" : "esql-auto-commit",
+              "sensitive" : false
+            },
+            "dbf-user-logical-types" : {
+              "displayName" : "Use Avro Logical Types",
+              "identifiesControllerService" : false,
+              "name" : "dbf-user-logical-types",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            },
+            "sql-pre-query" : {
+              "displayName" : "SQL Pre-Query",
+              "identifiesControllerService" : false,
+              "name" : "sql-pre-query",
+              "sensitive" : false
+            },
+            "compression-format" : {
+              "displayName" : "Compression Format",
+              "identifiesControllerService" : false,
+              "name" : "compression-format",
+              "sensitive" : false
+            },
+            "esql-output-batch-size" : {
+              "displayName" : "Output Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "esql-output-batch-size",
+              "sensitive" : false
+            },
+            "esql-fetch-size" : {
+              "displayName" : "Fetch Size",
+              "identifiesControllerService" : false,
+              "name" : "esql-fetch-size",
+              "sensitive" : false
+            },
+            "SQL select query" : {
+              "displayName" : "SQL select query",
+              "identifiesControllerService" : false,
+              "name" : "SQL select query",
+              "sensitive" : false
+            },
+            "dbf-normalize" : {
+              "displayName" : "Normalize Table/Column Names",
+              "identifiesControllerService" : false,
+              "name" : "dbf-normalize",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ "failure" ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
