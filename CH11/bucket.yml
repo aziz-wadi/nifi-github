@@ -1,12 +1,13 @@
 flows:
-  117ba4ae-972e-445b-b85d-96394e945d94: {ver: 1, file: insertStaging.snapshot, comments: baseline,
-    author: anonymous, created: 1738697584183, flowName: insertStaging, flowDesc: insert
-      to postgres db}
+  cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 3, file: readDataLake.snapshot, comments: move
+      processed records from datalak. count processed and moved, author: anonymous,
+    created: 1738790864196, flowName: readDataLake, flowDesc: reads json record from
+      datalake}
   83692524-5100-47a7-9da7-83a6bcdd54d1: {ver: 1, file: scanLake.snapshot, comments: baseline,
     author: anonymous, created: 1738694255709, flowName: scanLake, flowDesc: scans
       datalake for matched/unmatched records}
-  cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 2, file: readDataLake.snapshot, comments: using
-      datalake_dir global variable, author: anonymous, created: 1738694455206, flowName: readDataLake,
-    flowDesc: reads json record from datalake}
+  117ba4ae-972e-445b-b85d-96394e945d94: {ver: 1, file: insertStaging.snapshot, comments: baseline,
+    author: anonymous, created: 1738697584183, flowName: insertStaging, flowDesc: insert
+      to postgres db}
 layoutVer: 1
 bucketId: e17665c2-26be-471c-918c-aed3c12eabcd
