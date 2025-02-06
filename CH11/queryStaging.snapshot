@@ -218,7 +218,7 @@
             "y" : 256.0
           },
           "properties" : {
-            "allRecords" : "${recordCount:ge(10)}",
+            "allRecords" : "${recordCount:ge(50)}",
             "Routing Strategy" : "Route to Property name"
           },
           "propertyDescriptors" : {
