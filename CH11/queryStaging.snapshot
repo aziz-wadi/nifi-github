@@ -172,7 +172,7 @@
             "compression-format" : "none",
             "Schema Write Strategy" : "no-schema",
             "suppress-nulls" : "never-suppress",
-            "output-grouping" : "output-array",
+            "output-grouping" : "output-oneline",
             "schema-name" : "${schema.name}",
             "schema-access-strategy" : "inherit-record-schema",
             "schema-protocol-version" : "1",
@@ -545,7 +545,7 @@
             "Destination" : "flowfile-attribute",
             "Max String Length" : "20 MB",
             "Return Type" : "json",
-            "recordCount" : "$.[0].count",
+            "recordCount" : "$.count",
             "Null Value Representation" : "empty string",
             "Path Not Found Behavior" : "ignore"
           },
