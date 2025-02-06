@@ -52,6 +52,38 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "9b86980e-57b9-3037-aa39-4647a174e8bc",
+            "instanceIdentifier" : "bb2531dc-0747-1e13-dca0-edaa8a13cd78",
+            "name" : "insertStaging_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "2208749c-59eb-3958-b53f-c711ccfba190",
+          "instanceIdentifier" : "bb2531dd-0747-1e13-586a-bca0dba36e93",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "68e53f11-950b-3c42-9dd8-76415e33bbeb",
+            "instanceIdentifier" : "d25c17b3-0194-1000-0d0e-c482753ffdb3",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
             "comments" : "",
             "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
             "id" : "6a3e0b4a-4be3-3d62-81d7-6aefa2120740",
@@ -105,14 +137,28 @@
         "instanceIdentifier" : "d244ddbe-0194-1000-c9fd-3a80c46ce2f8",
         "labels" : [ ],
         "name" : "insertStaging",
-        "outputPorts" : [ ],
+        "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "identifier" : "9b86980e-57b9-3037-aa39-4647a174e8bc",
+          "instanceIdentifier" : "bb2531dc-0747-1e13-dca0-edaa8a13cd78",
+          "name" : "insertStaging_out",
+          "position" : {
+            "x" : 520.0,
+            "y" : 664.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        } ],
         "position" : {
-          "x" : 1200.0,
-          "y" : 808.0
+          "x" : 1128.0,
+          "y" : 776.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "success" ],
+          "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -195,7 +241,7 @@
             "compression-format" : "NONE",
             "esql-output-batch-size" : "0",
             "esql-fetch-size" : "0",
-            "SQL select query" : "INSERT INTO ${table}\nVALUES (${userid},\n'${name}',\n${age},\n'${street}',\n'${city}',\n'${state}',\n'${zip}');",
+            "SQL select query" : "INSERT INTO staging\nVALUES (${userid},\n'${name}',\n${age},\n'${street}',\n'${city}',\n'${state}',\n'${zip}');",
             "dbf-normalize" : "false"
           },
           "propertyDescriptors" : {
@@ -295,9 +341,7 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : {
-          "table" : "staging"
-        }
+        "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { },
