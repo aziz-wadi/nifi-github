@@ -337,7 +337,7 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "unmatched" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -360,7 +360,7 @@
             "y" : 608.0
           },
           "properties" : {
-            "allRecords" : "${recordCount:ge(900)}",
+            "allRecords" : "${recordCount:ge(1000)}",
             "Routing Strategy" : "Route to Property name"
           },
           "propertyDescriptors" : {
