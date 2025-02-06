@@ -97,8 +97,8 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
-          "identifier" : "638aa811-d601-3d99-8b6f-dda16445544a",
-          "instanceIdentifier" : "bb25321b-0747-1e13-85b4-808c1c0b4136",
+          "identifier" : "e4a22a23-42bd-3ff0-a205-4ab898a7eb1b",
+          "instanceIdentifier" : "bb253234-0747-1e13-eb6b-887d712421d3",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -111,39 +111,6 @@
             "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
             "id" : "211ff36d-d56b-3266-aa4f-054f95dbca91",
             "instanceIdentifier" : "bb253212-0747-1e13-17a9-378773d7a7c8",
-            "name" : "ExecuteSQL",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
-            "id" : "a7263840-bfa6-3612-a9bf-10101551ab41",
-            "instanceIdentifier" : "bb253217-0747-1e13-3b3b-6bcaa8e79cfe",
-            "name" : "ExecuteSQL",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
-          "identifier" : "b151f466-9a51-3736-9231-aacf30348b0f",
-          "instanceIdentifier" : "bb253218-0747-1e13-7da9-fbf824185706",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
-            "id" : "33e1478a-de9c-38e8-9829-90e323712739",
-            "instanceIdentifier" : "bb25320c-0747-1e13-01af-05d2bc64713e",
             "name" : "ExecuteSQL",
             "type" : "PROCESSOR"
           },
@@ -244,6 +211,39 @@
             "id" : "f3218326-96ce-3201-b0e9-22bcc25e4042",
             "instanceIdentifier" : "bb2531f5-0747-1e13-3c14-8a4c3d00fdcf",
             "name" : "ExecuteSQLRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
+            "id" : "a7263840-bfa6-3612-a9bf-10101551ab41",
+            "instanceIdentifier" : "bb253217-0747-1e13-3b3b-6bcaa8e79cfe",
+            "name" : "ExecuteSQL",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
+          "identifier" : "443e75a5-5c62-3b97-ac9d-97ec315327e6",
+          "instanceIdentifier" : "bb253233-0747-1e13-612b-91c5dac604bc",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
+            "id" : "33e1478a-de9c-38e8-9829-90e323712739",
+            "instanceIdentifier" : "bb25320c-0747-1e13-01af-05d2bc64713e",
+            "name" : "ExecuteSQL",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -975,7 +975,7 @@
           "name" : "ExecuteSQL",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 592.0,
+            "x" : 584.0,
             "y" : 640.0
           },
           "properties" : {
