@@ -1,0 +1,365 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
+            "id" : "9238f641-6f58-375a-83a8-d358adaf7899",
+            "instanceIdentifier" : "bb2531f2-0747-1e13-7c3f-9834e317951a",
+            "name" : "insertWarehouse_input",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "d8842287-9135-38c9-b823-4ee2a732e6f5",
+          "instanceIdentifier" : "bb2531f3-0747-1e13-defa-4b4824a49fa1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+            "id" : "18ff05a3-fc19-3572-a40f-eeae788cda82",
+            "instanceIdentifier" : "d81b4e67-0194-1000-6ed6-e34b108270d0",
+            "name" : "queryStaging_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
+            "id" : "1ad5894b-bbb5-38b5-90f1-61da37417508",
+            "instanceIdentifier" : "d22db9f5-0194-1000-fe8c-3a31c8793e96",
+            "name" : "scanLake_input",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "101af898-6b26-3938-9c06-d93268799c15",
+          "instanceIdentifier" : "d7ff0787-0194-1000-b01f-87c71bfed239",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "533bda08-ca5a-3bd5-bfcb-4af6b6347ea4",
+            "id" : "0a8ea56b-f46e-3dbb-8708-6f4fc7bb5242",
+            "instanceIdentifier" : "d1f38f3e-0194-1000-eacd-242b8f48b74f",
+            "name" : "readDataLake_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+            "id" : "5a4ea3eb-d408-379d-99fd-c10322fc6540",
+            "instanceIdentifier" : "db4cf990-0194-1000-9dac-21bb78c0fc66",
+            "name" : "queryStaging_input",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "3dd4a86d-559f-3b8c-91ac-ea92ff423dea",
+          "instanceIdentifier" : "bb2531ef-0747-1e13-92ea-528b7d34c081",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "9b86980e-57b9-3037-aa39-4647a174e8bc",
+            "instanceIdentifier" : "bb2531dc-0747-1e13-dca0-edaa8a13cd78",
+            "name" : "insertStaging_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+            "id" : "73373112-286e-3701-bf4b-ac3b456d688f",
+            "instanceIdentifier" : "d245f631-0194-1000-6529-a499f74e45c4",
+            "name" : "insertStaging_input",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "7a0c17d4-9a14-3deb-a4cf-d5b2673c850d",
+          "instanceIdentifier" : "d259929e-0194-1000-2111-13b3e08baa6b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "533bda08-ca5a-3bd5-bfcb-4af6b6347ea4",
+            "id" : "0a8ea56b-f46e-3dbb-8708-6f4fc7bb5242",
+            "instanceIdentifier" : "d1f38f3e-0194-1000-eacd-242b8f48b74f",
+            "name" : "readDataLake_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "bb253239-0747-1e13-97b1-2cc2d10df6be",
+        "labels" : [ ],
+        "name" : "datalake_pipeline",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 1128.0,
+          "y" : 464.0
+        },
+        "processGroups" : [ {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "d22d3f1f-0194-1000-d8c5-3ec9cbad09ce",
+          "labels" : [ ],
+          "name" : "scanLake",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1624.0,
+            "y" : 776.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "83692524-5100-47a7-9da7-83a6bcdd54d1",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/83692524-5100-47a7-9da7-83a6bcdd54d1/versions/3",
+            "version" : 3
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "9aafbc50-d5d1-3225-b417-86e2b77cbb43",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "bb2531f1-0747-1e13-434f-4ade76f8abda",
+          "labels" : [ ],
+          "name" : "insertWarehouse",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1808.0,
+            "y" : 1112.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "0cb8b304-4b30-4b91-8320-59b90f1bd9f9",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/0cb8b304-4b30-4b91-8320-59b90f1bd9f9/versions/3",
+            "version" : 3
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "e8a287b4-4f7f-32db-ba5c-cce2bc51557f",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "db4c5d2c-0194-1000-0eda-e987dfe86275",
+          "labels" : [ ],
+          "name" : "vildateStaging",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 2088.0,
+            "y" : 768.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "ccd04c89-9153-4955-aa7d-586a9955b6e1",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/ccd04c89-9153-4955-aa7d-586a9955b6e1/versions/1",
+            "version" : 1
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "fff006ec-f1cb-3851-b0ce-dab829bf970a",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "d244ddbe-0194-1000-c9fd-3a80c46ce2f8",
+          "labels" : [ ],
+          "name" : "insertStaging",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1128.0,
+            "y" : 776.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "117ba4ae-972e-445b-b85d-96394e945d94",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/117ba4ae-972e-445b-b85d-96394e945d94/versions/4",
+            "version" : 4
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "d80ff321-0194-1000-953f-88e96ed44683",
+          "labels" : [ ],
+          "name" : "queryStaging",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1128.0,
+            "y" : 1128.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "967191df-6689-4ff5-ac8f-ed5945314fb9",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/967191df-6689-4ff5-ac8f-ed5945314fb9/versions/5",
+            "version" : 5
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "e879aa71-57b1-3a80-b8bd-df50cde7774a",
+          "identifier" : "533bda08-ca5a-3bd5-bfcb-4af6b6347ea4",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "d1f235d9-0194-1000-7758-9bc9dd619794",
+          "labels" : [ ],
+          "name" : "readDataLake",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1208.0,
+            "y" : 464.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "e17665c2-26be-471c-918c-aed3c12eabcd",
+            "flowId" : "cdfcbe28-1d39-4c2d-86a2-330fd728f341",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/e17665c2-26be-471c-918c-aed3c12eabcd/flows/cdfcbe28-1d39-4c2d-86a2-330fd728f341/versions/3",
+            "version" : 3
+          }
+        } ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : {
+          "datalake_dir" : "/home/big_data/nifi/my_data_source/ch11_datalake"
+        }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}

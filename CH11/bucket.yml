@@ -2,6 +2,9 @@ flows:
   ccd04c89-9153-4955-aa7d-586a9955b6e1: {ver: 1, file: validateStaging.snapshot, comments: baseline,
     author: anonymous, created: 1738854752911, flowName: validateStaging, flowDesc: using
       great expectations}
+  e37e675a-accc-4acf-9082-6431a2cdfc94: {ver: 1, file: datalake_pipeline.snapshot,
+    comments: baseline, author: anonymous, created: 1738868582936, flowName: datalake_pipeline,
+    flowDesc: ''}
   967191df-6689-4ff5-ac8f-ed5945314fb9: {ver: 5, file: queryStaging.snapshot, comments: '',
     author: anonymous, created: 1738867052213, flowName: queryStaging, flowDesc: 'counts
       the rows in staging after loading it, if >= 1000 generates true'}
