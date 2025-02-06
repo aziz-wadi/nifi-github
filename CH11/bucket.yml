@@ -7,9 +7,9 @@ flows:
       processed records from datalak. count processed and moved, author: anonymous,
     created: 1738790864196, flowName: readDataLake, flowDesc: reads json record from
       datalake}
-  83692524-5100-47a7-9da7-83a6bcdd54d1: {ver: 2, file: scanLake.snapshot, comments: rename
-      counter, author: anonymous, created: 1738790891957, flowName: scanLake, flowDesc: scans
-      datalake for matched/unmatched records}
+  83692524-5100-47a7-9da7-83a6bcdd54d1: {ver: 3, file: scanLake.snapshot, comments: output
+      port removed, author: anonymous, created: 1738842800379, flowName: scanLake,
+    flowDesc: scans datalake for matched/unmatched records}
   117ba4ae-972e-445b-b85d-96394e945d94: {ver: 2, file: insertStaging.snapshot, comments: 'replaced
       PutSQL (a bug maybe?) with ExecuteSQL', author: anonymous, created: 1738790929685,
     flowName: insertStaging, flowDesc: insert to postgres db}

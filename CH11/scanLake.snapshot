@@ -73,39 +73,6 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "0cd7b35e-547b-33fb-8ba5-1baaa5d2b330",
-            "instanceIdentifier" : "d2321efc-0194-1000-1cbd-92369f8550e0",
-            "name" : "scanLake_match_out",
-            "type" : "OUTPUT_PORT"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "7d612e02-ff61-3ef1-b355-b9f9531a36d3",
-          "instanceIdentifier" : "d23e7de7-0194-1000-d3fa-3dc17c1378e1",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-            "id" : "a7cd4356-c4e8-30ce-a3b2-de2d72af52de",
-            "instanceIdentifier" : "d23d62e4-0194-1000-3f97-dd3faaeec247",
-            "name" : "UpdateCounter",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -133,29 +100,14 @@
         "instanceIdentifier" : "d22d3f1f-0194-1000-d8c5-3ec9cbad09ce",
         "labels" : [ ],
         "name" : "scanLake",
-        "outputPorts" : [ {
-          "allowRemoteAccess" : false,
-          "comments" : "",
-          "componentType" : "OUTPUT_PORT",
-          "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "aeb95d76-3c66-398a-89df-e4de7a5710a7",
-          "identifier" : "0cd7b35e-547b-33fb-8ba5-1baaa5d2b330",
-          "instanceIdentifier" : "d2321efc-0194-1000-1cbd-92369f8550e0",
-          "name" : "scanLake_match_out",
-          "position" : {
-            "x" : 480.0,
-            "y" : 712.0
-          },
-          "scheduledState" : "ENABLED",
-          "type" : "OUTPUT_PORT"
-        } ],
+        "outputPorts" : [ ],
         "position" : {
-          "x" : 2008.0,
-          "y" : 472.0
+          "x" : 1904.0,
+          "y" : 464.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "success" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
