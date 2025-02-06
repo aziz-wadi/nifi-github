@@ -5,8 +5,8 @@ flows:
   967191df-6689-4ff5-ac8f-ed5945314fb9: {ver: 5, file: queryStaging.snapshot, comments: '',
     author: anonymous, created: 1738867052213, flowName: queryStaging, flowDesc: 'counts
       the rows in staging after loading it, if >= 1000 generates true'}
-  0cb8b304-4b30-4b91-8320-59b90f1bd9f9: {ver: 2, file: insertWarehouse.snapshot, comments: '',
-    author: anonymous, created: 1738867056415, flowName: insertWarehouse, flowDesc: 'insert
+  0cb8b304-4b30-4b91-8320-59b90f1bd9f9: {ver: 3, file: insertWarehouse.snapshot, comments: '',
+    author: anonymous, created: 1738868520507, flowName: insertWarehouse, flowDesc: 'insert
       to warehouses (adults, kids) and delete from staging'}
   cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 3, file: readDataLake.snapshot, comments: move
       processed records from datalak. count processed and moved, author: anonymous,

@@ -316,7 +316,7 @@
         "processors" : [ {
           "autoTerminatedRelationships" : [ "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
+          "bulletinLevel" : "ERROR",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
@@ -333,8 +333,8 @@
           "name" : "ExecuteSQL",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 592.0,
-            "y" : 832.0
+            "x" : 584.0,
+            "y" : 856.0
           },
           "properties" : {
             "esql-max-rows" : "0",
@@ -723,7 +723,7 @@
           "name" : "ExecuteSQL",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -24.0,
+            "x" : -40.0,
             "y" : 752.0
           },
           "properties" : {
@@ -958,7 +958,7 @@
         }, {
           "autoTerminatedRelationships" : [ "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
+          "bulletinLevel" : "ERROR",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
