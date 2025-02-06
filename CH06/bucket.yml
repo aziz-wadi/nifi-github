@@ -1,4 +1,7 @@
 flows:
+  ea54981c-5a0c-4246-9f3a-6828ef82c4a9: {ver: 1, file: insertWarehouse.snapshot, comments: baseline,
+    author: anonymous, created: 1738864120847, flowName: insertWarehouse, flowDesc: 'insert
+      to warehouses (adults, kids) and delete from staging'}
   e5faf985-40b1-410a-86cc-7d7dd3bd7f95: {ver: 1, file: CH06_SeeClickFix_flow.snapshot,
     comments: baseline, author: anonymous, created: 1738603392590, flowName: CH06_SeeClickFix_flow,
     flowDesc: ''}
