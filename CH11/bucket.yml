@@ -2,10 +2,9 @@ flows:
   ccd04c89-9153-4955-aa7d-586a9955b6e1: {ver: 1, file: validateStaging.snapshot, comments: baseline,
     author: anonymous, created: 1738854752911, flowName: validateStaging, flowDesc: using
       great expectations}
-  967191df-6689-4ff5-ac8f-ed5945314fb9: {ver: 3, file: queryStaging.snapshot, comments: 'output
-      from array to single line to remove [ ] from json', author: anonymous, created: 1738842156742,
-    flowName: queryStaging, flowDesc: 'counts the rows in staging after loading it,
-      if >= 1000 generates true'}
+  967191df-6689-4ff5-ac8f-ed5945314fb9: {ver: 4, file: queryStaging.snapshot, comments: '',
+    author: anonymous, created: 1738864081011, flowName: queryStaging, flowDesc: 'counts
+      the rows in staging after loading it, if >= 1000 generates true'}
   cdfcbe28-1d39-4c2d-86a2-330fd728f341: {ver: 3, file: readDataLake.snapshot, comments: move
       processed records from datalak. count processed and moved, author: anonymous,
     created: 1738790864196, flowName: readDataLake, flowDesc: reads json record from

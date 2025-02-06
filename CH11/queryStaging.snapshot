@@ -8,12 +8,48 @@
         "54851d4e-a4f7-3753-ad89-14f257599f12" : {
           "identifier" : "54851d4e-a4f7-3753-ad89-14f257599f12",
           "name" : "CH11_postgres_test"
+        },
+        "a3e3e49c-dd3d-33a4-a7a3-944c9abb9da4" : {
+          "identifier" : "a3e3e49c-dd3d-33a4-a7a3-944c9abb9da4",
+          "name" : "CH11_JSONwrite_test"
         }
       },
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
         "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+            "id" : "d8efeebb-318c-33ee-ab1a-7854bb6051f0",
+            "instanceIdentifier" : "d811d8ba-0194-1000-f48d-c0c879f07ace",
+            "name" : "ExecuteSQLRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+          "identifier" : "41973529-e3e2-3c34-a38e-3bb83de7be80",
+          "instanceIdentifier" : "db4d4e83-0194-1000-435b-b78742fa9c6f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
+            "id" : "5a4ea3eb-d408-379d-99fd-c10322fc6540",
+            "instanceIdentifier" : "db4cf990-0194-1000-9dac-21bb78c0fc66",
+            "name" : "queryStaging_input",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
@@ -111,186 +147,8 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
-            "id" : "d8efeebb-318c-33ee-ab1a-7854bb6051f0",
-            "instanceIdentifier" : "d811d8ba-0194-1000-f48d-c0c879f07ace",
-            "name" : "ExecuteSQLRecord",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
-          "identifier" : "4d6b4d41-be76-3997-b2fa-602e202385f7",
-          "instanceIdentifier" : "d8152617-0194-1000-9013-d1b507737f09",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "groupId" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
-            "id" : "87c9d577-5b9e-3e30-85d2-f38eba7230ff",
-            "instanceIdentifier" : "d8150e45-0194-1000-c912-2da5bed19792",
-            "name" : "queryStaging_input",
-            "type" : "INPUT_PORT"
-          },
-          "zIndex" : 0
         } ],
-        "controllerServices" : [ {
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-record-serialization-services-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-standard-services-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "1.28.1"
-            },
-            "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
-          } ],
-          "groupIdentifier" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
-          "identifier" : "81b1d151-c3e7-3a77-8da7-30216720af37",
-          "instanceIdentifier" : "d81245f5-0194-1000-001a-50edd5513988",
-          "name" : "CH11_JSONwrite_test",
-          "properties" : {
-            "Allow Scientific Notation" : "true",
-            "compression-level" : "1",
-            "Pretty Print JSON" : "false",
-            "compression-format" : "none",
-            "Schema Write Strategy" : "no-schema",
-            "suppress-nulls" : "never-suppress",
-            "output-grouping" : "output-oneline",
-            "schema-name" : "${schema.name}",
-            "schema-access-strategy" : "inherit-record-schema",
-            "schema-protocol-version" : "1",
-            "schema-text" : "${avro.schema}"
-          },
-          "propertyDescriptors" : {
-            "schema-branch" : {
-              "displayName" : "Schema Branch",
-              "identifiesControllerService" : false,
-              "name" : "schema-branch",
-              "sensitive" : false
-            },
-            "Allow Scientific Notation" : {
-              "displayName" : "Allow Scientific Notation",
-              "identifiesControllerService" : false,
-              "name" : "Allow Scientific Notation",
-              "sensitive" : false
-            },
-            "compression-level" : {
-              "displayName" : "Compression Level",
-              "identifiesControllerService" : false,
-              "name" : "compression-level",
-              "sensitive" : false
-            },
-            "schema-cache" : {
-              "displayName" : "Schema Cache",
-              "identifiesControllerService" : true,
-              "name" : "schema-cache",
-              "sensitive" : false
-            },
-            "Timestamp Format" : {
-              "displayName" : "Timestamp Format",
-              "identifiesControllerService" : false,
-              "name" : "Timestamp Format",
-              "sensitive" : false
-            },
-            "Date Format" : {
-              "displayName" : "Date Format",
-              "identifiesControllerService" : false,
-              "name" : "Date Format",
-              "sensitive" : false
-            },
-            "Pretty Print JSON" : {
-              "displayName" : "Pretty Print JSON",
-              "identifiesControllerService" : false,
-              "name" : "Pretty Print JSON",
-              "sensitive" : false
-            },
-            "compression-format" : {
-              "displayName" : "Compression Format",
-              "identifiesControllerService" : false,
-              "name" : "compression-format",
-              "sensitive" : false
-            },
-            "Schema Write Strategy" : {
-              "displayName" : "Schema Write Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Schema Write Strategy",
-              "sensitive" : false
-            },
-            "suppress-nulls" : {
-              "displayName" : "Suppress Null Values",
-              "identifiesControllerService" : false,
-              "name" : "suppress-nulls",
-              "sensitive" : false
-            },
-            "output-grouping" : {
-              "displayName" : "Output Grouping",
-              "identifiesControllerService" : false,
-              "name" : "output-grouping",
-              "sensitive" : false
-            },
-            "schema-name" : {
-              "displayName" : "Schema Name",
-              "identifiesControllerService" : false,
-              "name" : "schema-name",
-              "sensitive" : false
-            },
-            "schema-registry" : {
-              "displayName" : "Schema Registry",
-              "identifiesControllerService" : true,
-              "name" : "schema-registry",
-              "sensitive" : false
-            },
-            "Time Format" : {
-              "displayName" : "Time Format",
-              "identifiesControllerService" : false,
-              "name" : "Time Format",
-              "sensitive" : false
-            },
-            "schema-access-strategy" : {
-              "displayName" : "Schema Access Strategy",
-              "identifiesControllerService" : false,
-              "name" : "schema-access-strategy",
-              "sensitive" : false
-            },
-            "schema-protocol-version" : {
-              "displayName" : "Schema Protocol Version",
-              "identifiesControllerService" : false,
-              "name" : "schema-protocol-version",
-              "sensitive" : false
-            },
-            "schema-version" : {
-              "displayName" : "Schema Version",
-              "identifiesControllerService" : false,
-              "name" : "schema-version",
-              "sensitive" : false
-            },
-            "schema-text" : {
-              "displayName" : "Schema Text",
-              "identifiesControllerService" : false,
-              "name" : "schema-text",
-              "sensitive" : false
-            }
-          },
-          "scheduledState" : "DISABLED",
-          "type" : "org.apache.nifi.json.JsonRecordSetWriter"
-        } ],
+        "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
         "defaultFlowFileExpiration" : "0 sec",
@@ -303,12 +161,12 @@
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "17e84686-56be-3db8-bdd0-ce3c40ed2b43",
-          "identifier" : "87c9d577-5b9e-3e30-85d2-f38eba7230ff",
-          "instanceIdentifier" : "d8150e45-0194-1000-c912-2da5bed19792",
+          "identifier" : "5a4ea3eb-d408-379d-99fd-c10322fc6540",
+          "instanceIdentifier" : "db4cf990-0194-1000-9dac-21bb78c0fc66",
           "name" : "queryStaging_input",
           "position" : {
-            "x" : 912.0,
-            "y" : 16.0
+            "x" : 840.0,
+            "y" : 64.0
           },
           "scheduledState" : "ENABLED",
           "type" : "INPUT_PORT"
@@ -325,15 +183,15 @@
           "instanceIdentifier" : "d81b4e67-0194-1000-6ed6-e34b108270d0",
           "name" : "queryStaging_out",
           "position" : {
-            "x" : 904.0,
-            "y" : 840.0
+            "x" : 864.0,
+            "y" : 496.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 1232.0,
-          "y" : 776.0
+          "x" : 1128.0,
+          "y" : 1128.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -356,11 +214,11 @@
           "name" : "RouteOnAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 832.0,
-            "y" : 608.0
+            "x" : 808.0,
+            "y" : 256.0
           },
           "properties" : {
-            "allRecords" : "${recordCount:ge(1000)}",
+            "allRecords" : "${recordCount:ge(10)}",
             "Routing Strategy" : "Route to Property name"
           },
           "propertyDescriptors" : {
@@ -406,12 +264,12 @@
           "name" : "ExecuteSQLRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 848.0,
-            "y" : 160.0
+            "x" : 1440.0,
+            "y" : 32.0
           },
           "properties" : {
             "esql-max-rows" : "0",
-            "esqlrecord-record-writer" : "81b1d151-c3e7-3a77-8da7-30216720af37",
+            "esqlrecord-record-writer" : "a3e3e49c-dd3d-33a4-a7a3-944c9abb9da4",
             "dbf-default-precision" : "10",
             "Max Wait Time" : "0 seconds",
             "Database Connection Pooling Service" : "54851d4e-a4f7-3753-ad89-14f257599f12",
@@ -420,7 +278,7 @@
             "dbf-default-scale" : "0",
             "esql-output-batch-size" : "1",
             "esql-fetch-size" : "0",
-            "SQL select query" : "SELECT count(*)\nFROM ${table};",
+            "SQL select query" : "SELECT count(*)\nFROM staging;",
             "esqlrecord-normalize" : "false"
           },
           "propertyDescriptors" : {
@@ -538,8 +396,8 @@
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 840.0,
-            "y" : 376.0
+            "x" : 1440.0,
+            "y" : 256.0
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
@@ -598,9 +456,7 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : {
-          "table" : "staging"
-        }
+        "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { },
