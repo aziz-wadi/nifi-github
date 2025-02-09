@@ -350,7 +350,7 @@
             "y" : 304.0
           },
           "properties" : {
-            "Time Duration" : "2 sec",
+            "Time Duration" : "1 sec",
             "Maximum Rate" : "1",
             "Rate Control Criteria" : "flowfile count"
           },

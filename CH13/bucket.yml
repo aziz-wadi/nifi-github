@@ -1,6 +1,6 @@
 flows:
-  86d83604-d0eb-432a-8260-7cd1536872ba: {ver: 2, file: kafkaConsumer.snapshot, comments: output
-      enabled, author: anonymous, created: 1739118240982, flowName: kafkaConsumer,
+  86d83604-d0eb-432a-8260-7cd1536872ba: {ver: 3, file: kafkaConsumer.snapshot, comments: delay
+      = 1 sec, author: anonymous, created: 1739118989208, flowName: kafkaConsumer,
     flowDesc: consumes records from kafka topic}
   ec1c433c-aaec-4c2f-a6ec-5757a64c9731: {ver: 1, file: readUsers.snapshot, comments: baseline,
     author: anonymous, created: 1739116586471, flowName: readUsers, flowDesc: reads
