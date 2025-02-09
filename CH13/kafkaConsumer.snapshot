@@ -100,12 +100,12 @@
             "x" : 488.0,
             "y" : 544.0
           },
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 1743.6702989843618,
-          "y" : 1127.1609003082222
+          "x" : 1568.0,
+          "y" : 968.0
         },
         "processGroups" : [ ],
         "processors" : [ {
