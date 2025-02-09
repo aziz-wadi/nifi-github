@@ -1,0 +1,347 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+            "id" : "3b2c4800-e665-3fcc-abeb-14e106c0625a",
+            "instanceIdentifier" : "eb8443ae-0194-1000-71b0-bab595842d5d",
+            "name" : "consumerOutput",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "e5baf3d0-6dcc-3fdf-959e-4396a5332ecb",
+          "instanceIdentifier" : "ebb3bb66-0194-1000-87b5-022876e064f9",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "80b2fe00-80a8-3eea-809b-b75b89b19033",
+            "id" : "59720081-3712-35ba-9969-72b2130b4e33",
+            "instanceIdentifier" : "5aca49e0-8a93-34ca-597b-7d6b43a662d9",
+            "name" : "kafkaConsumer_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+            "id" : "3b2c4800-e665-3fcc-abeb-14e106c0625a",
+            "instanceIdentifier" : "eb8443ae-0194-1000-71b0-bab595842d5d",
+            "name" : "consumerOutput",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "77ed8411-49d9-30c7-93fc-007b821752e6",
+          "instanceIdentifier" : "eb845075-0194-1000-a4c4-510057ce9340",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "76cb0551-525b-3fff-91a5-0193268d89a1",
+            "id" : "59720081-3712-35ba-9969-72b2130b4e33",
+            "instanceIdentifier" : "eb77ce49-0194-1000-d138-0c6072b8e07b",
+            "name" : "kafkaConsumer_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "dbdefd30-778f-3462-a86b-0d07f433f56e",
+            "id" : "276573c3-def4-38bb-8a3b-368c15600c50",
+            "instanceIdentifier" : "eb6d8a45-0194-1000-cf55-b644aa17ab94",
+            "name" : "kafkaProducer_input",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "d5606a57-c0ca-3b41-9b3e-f318b6e11666",
+          "instanceIdentifier" : "eb6f345f-0194-1000-a329-6d5be86cf06b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
+            "id" : "35ab59de-5ee2-3ccd-9c0f-98401a90157b",
+            "instanceIdentifier" : "e7428d53-8eed-3b56-d882-999fee536458",
+            "name" : "readDataLake_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+            "id" : "3b2c4800-e665-3fcc-abeb-14e106c0625a",
+            "instanceIdentifier" : "eb8443ae-0194-1000-71b0-bab595842d5d",
+            "name" : "consumerOutput",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "07f8696d-68b5-348a-a87b-d60ce4c6a1bd",
+          "instanceIdentifier" : "ebb35d93-0194-1000-7438-32064f4b331a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "bc607ed8-294a-33b6-a760-db5f6d8f1822",
+            "id" : "59720081-3712-35ba-9969-72b2130b4e33",
+            "instanceIdentifier" : "66729a25-e03a-3664-c588-e361f22b1a6f",
+            "name" : "kafkaConsumer_out",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "ebb937b1-0194-1000-82d9-b8c3bc77dce4",
+        "labels" : [ ],
+        "name" : "kafka_pipeline",
+        "outputPorts" : [ {
+          "allowRemoteAccess" : true,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "3b2c4800-e665-3fcc-abeb-14e106c0625a",
+          "instanceIdentifier" : "eb8443ae-0194-1000-71b0-bab595842d5d",
+          "name" : "consumerOutput",
+          "position" : {
+            "x" : 2416.0,
+            "y" : 1264.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        } ],
+        "position" : {
+          "x" : 1944.0,
+          "y" : 1088.0
+        },
+        "processGroups" : [ {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "dbdefd30-778f-3462-a86b-0d07f433f56e",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "eb6bf777-0194-1000-8a8f-389076265c27",
+          "labels" : [ ],
+          "name" : "kafkaProducer",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 2224.0,
+            "y" : 680.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "ee4f6005-4ee5-4702-ab5b-b92a2e17769f",
+            "flowId" : "fffb0673-4f97-403a-9782-077356da3ff4",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/ee4f6005-4ee5-4702-ab5b-b92a2e17769f/flows/fffb0673-4f97-403a-9782-077356da3ff4/versions/1",
+            "version" : 1
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "76cb0551-525b-3fff-91a5-0193268d89a1",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "eb742dc8-0194-1000-e3b2-99743bed2902",
+          "labels" : [ ],
+          "name" : "kafkaConsumer",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1568.0,
+            "y" : 968.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "ee4f6005-4ee5-4702-ab5b-b92a2e17769f",
+            "flowId" : "86d83604-d0eb-432a-8260-7cd1536872ba",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/ee4f6005-4ee5-4702-ab5b-b92a2e17769f/flows/86d83604-d0eb-432a-8260-7cd1536872ba/versions/3",
+            "version" : 3
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "eb5e0870-0194-1000-5ea2-8be13a5b690a",
+          "labels" : [ ],
+          "logFileSuffix" : "",
+          "name" : "readUsers",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1560.0,
+            "y" : 680.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "ee4f6005-4ee5-4702-ab5b-b92a2e17769f",
+            "flowId" : "ec1c433c-aaec-4c2f-a6ec-5757a64c9731",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080/nifi-registry-api/buckets/ee4f6005-4ee5-4702-ab5b-b92a2e17769f/flows/ec1c433c-aaec-4c2f-a6ec-5757a64c9731/versions/2",
+            "version" : 2
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "bc607ed8-294a-33b6-a760-db5f6d8f1822",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "ebb34a0e-0194-1000-ca13-0a55d281b746",
+          "labels" : [ ],
+          "name" : "kafkaConsumer",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1576.0,
+            "y" : 1216.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "ee4f6005-4ee5-4702-ab5b-b92a2e17769f",
+            "flowId" : "86d83604-d0eb-432a-8260-7cd1536872ba",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080//nifi-registry-api/buckets/ee4f6005-4ee5-4702-ab5b-b92a2e17769f/flows/86d83604-d0eb-432a-8260-7cd1536872ba/versions/3",
+            "version" : 3
+          }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "31f8202f-108a-3113-a2b4-75e8c1dab6e2",
+          "identifier" : "80b2fe00-80a8-3eea-809b-b75b89b19033",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "ebb3a309-0194-1000-7f3d-2995ea149cf4",
+          "labels" : [ ],
+          "name" : "kafkaConsumer",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1568.0,
+            "y" : 1480.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "ee4f6005-4ee5-4702-ab5b-b92a2e17769f",
+            "flowId" : "86d83604-d0eb-432a-8260-7cd1536872ba",
+            "registryUrl" : "http://localhost:18080/",
+            "storageLocation" : "http://localhost:18080//nifi-registry-api/buckets/ee4f6005-4ee5-4702-ab5b-b92a2e17769f/flows/86d83604-d0eb-432a-8260-7cd1536872ba/versions/3",
+            "version" : 3
+          }
+        } ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}

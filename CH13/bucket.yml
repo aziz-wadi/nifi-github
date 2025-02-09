@@ -8,5 +8,8 @@ flows:
   fffb0673-4f97-403a-9782-077356da3ff4: {ver: 1, file: kafkaProducer.snapshot, comments: baseline,
     author: anonymous, created: 1739117714773, flowName: kafkaProducer, flowDesc: sends
       records to kafka topic}
+  01578e13-4d01-4571-95ef-bba804230adc: {ver: 1, file: kafka_piepline.snapshot, comments: baseline,
+    author: anonymous, created: 1739121620181, flowName: kafka_piepline, flowDesc: 'reads
+      json record, insert into topic, consumes topic'}
 layoutVer: 1
 bucketId: ee4f6005-4ee5-4702-ab5b-b92a2e17769f
