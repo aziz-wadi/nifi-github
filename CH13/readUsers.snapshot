@@ -16,39 +16,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "660e2cc8-3e30-39f8-827e-169b0fe8303d",
-            "instanceIdentifier" : "33a42a1d-900a-3b9a-f834-777f8a5058b5",
-            "name" : "UpdateCounter",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "18eb3731-373f-37b6-936a-0ac7ad57666e",
-          "instanceIdentifier" : "1c07c0ad-de16-33f1-92be-c278371b622b",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "5a2a5f65-cc98-3daf-b1c3-185688eea7de",
-            "instanceIdentifier" : "2bc125e0-1a45-33b5-daf2-d6005ef36be4",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
             "id" : "b77793eb-ea70-31de-b455-a239d9237422",
             "instanceIdentifier" : "7548c868-d63f-3cad-190c-4084d9bff6b8",
             "name" : "EvaluateJsonPath",
@@ -64,72 +31,6 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer" ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "de71caf6-27ce-3fa2-8105-d2cc5c22fdaa",
-            "instanceIdentifier" : "1a4fa573-8686-35fb-93ce-9e02ef465c77",
-            "name" : "GetFile",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "5a2a5f65-cc98-3daf-b1c3-185688eea7de",
-            "instanceIdentifier" : "2bc125e0-1a45-33b5-daf2-d6005ef36be4",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "90607820-5bba-391a-a6f8-f8b6215851ef",
-          "instanceIdentifier" : "8c4dcdd9-feb8-35ca-1ff6-564ecd535288",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "de71caf6-27ce-3fa2-8105-d2cc5c22fdaa",
-            "instanceIdentifier" : "1a4fa573-8686-35fb-93ce-9e02ef465c77",
-            "name" : "GetFile",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-            "id" : "da1b4683-6513-3268-a51e-30f4c5af9bd2",
-            "instanceIdentifier" : "8975035e-15eb-358c-6283-d4f340b67050",
-            "name" : "UpdateCounter",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "ebc497f0-b9c8-3e18-a018-6b10041ff51a",
-          "instanceIdentifier" : "a800a79a-d20f-3646-56c0-6cd7c0a5f9aa",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
@@ -197,105 +98,18 @@
           "instanceIdentifier" : "e7428d53-8eed-3b56-d882-999fee536458",
           "name" : "readDataLake_out",
           "position" : {
-            "x" : 776.0,
+            "x" : 608.0,
             "y" : 464.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 1792.0,
-          "y" : 816.0
+          "x" : 1560.0,
+          "y" : 680.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "5a2a5f65-cc98-3daf-b1c3-185688eea7de",
-          "instanceIdentifier" : "2bc125e0-1a45-33b5-daf2-d6005ef36be4",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "PutFile",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -72.0,
-            "y" : 8.0
-          },
-          "properties" : {
-            "Create Missing Directories" : "true",
-            "Directory" : "/home/big_data/nifi/my_data_source/ch13_users_processed",
-            "Conflict Resolution Strategy" : "fail"
-          },
-          "propertyDescriptors" : {
-            "Group" : {
-              "displayName" : "Group",
-              "identifiesControllerService" : false,
-              "name" : "Group",
-              "sensitive" : false
-            },
-            "Owner" : {
-              "displayName" : "Owner",
-              "identifiesControllerService" : false,
-              "name" : "Owner",
-              "sensitive" : false
-            },
-            "Create Missing Directories" : {
-              "displayName" : "Create Missing Directories",
-              "identifiesControllerService" : false,
-              "name" : "Create Missing Directories",
-              "sensitive" : false
-            },
-            "Permissions" : {
-              "displayName" : "Permissions",
-              "identifiesControllerService" : false,
-              "name" : "Permissions",
-              "sensitive" : false
-            },
-            "Maximum File Count" : {
-              "displayName" : "Maximum File Count",
-              "identifiesControllerService" : false,
-              "name" : "Maximum File Count",
-              "sensitive" : false
-            },
-            "Last Modified Time" : {
-              "displayName" : "Last Modified Time",
-              "identifiesControllerService" : false,
-              "name" : "Last Modified Time",
-              "sensitive" : false
-            },
-            "Directory" : {
-              "displayName" : "Directory",
-              "identifiesControllerService" : false,
-              "name" : "Directory",
-              "sensitive" : false
-            },
-            "Conflict Resolution Strategy" : {
-              "displayName" : "Conflict Resolution Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Conflict Resolution Strategy",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.PutFile",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "failure", "unmatched" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -315,8 +129,8 @@
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 712.0,
-            "y" : 224.0
+            "x" : 552.0,
+            "y" : 232.0
           },
           "properties" : {
             "zip" : "$.zip",
@@ -531,106 +345,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GetFile",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "success" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "660e2cc8-3e30-39f8-827e-169b0fe8303d",
-          "instanceIdentifier" : "33a42a1d-900a-3b9a-f834-777f8a5058b5",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "UpdateCounter",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -104.0,
-            "y" : 320.0
-          },
-          "properties" : {
-            "counter-name" : "datalake_recordsMoved",
-            "delta" : "1"
-          },
-          "propertyDescriptors" : {
-            "counter-name" : {
-              "displayName" : "Counter Name",
-              "identifiesControllerService" : false,
-              "name" : "counter-name",
-              "sensitive" : false
-            },
-            "delta" : {
-              "displayName" : "Delta",
-              "identifiesControllerService" : false,
-              "name" : "delta",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "success" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.28.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "83e2e5fb-234f-328d-a12e-f7dc7dec7836",
-          "identifier" : "da1b4683-6513-3268-a51e-30f4c5af9bd2",
-          "instanceIdentifier" : "8975035e-15eb-358c-6283-d4f340b67050",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "UpdateCounter",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 272.0,
-            "y" : 416.0
-          },
-          "properties" : {
-            "counter-name" : "datalake_recordsProcessed",
-            "delta" : "1"
-          },
-          "propertyDescriptors" : {
-            "counter-name" : {
-              "displayName" : "Counter Name",
-              "identifiesControllerService" : false,
-              "name" : "counter-name",
-              "sensitive" : false
-            },
-            "delta" : {
-              "displayName" : "Delta",
-              "identifiesControllerService" : false,
-              "name" : "delta",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
