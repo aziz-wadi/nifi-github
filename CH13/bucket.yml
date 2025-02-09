@@ -1,4 +1,7 @@
 flows:
+  86d83604-d0eb-432a-8260-7cd1536872ba: {ver: 1, file: kafkaConsumer.snapshot, comments: baseline,
+    author: anonymous, created: 1739117746244, flowName: kafkaConsumer, flowDesc: consumes
+      records from kafka topic}
   ec1c433c-aaec-4c2f-a6ec-5757a64c9731: {ver: 1, file: readUsers.snapshot, comments: baseline,
     author: anonymous, created: 1739116586471, flowName: readUsers, flowDesc: reads
       json records}
